@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number System Conversion</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #040101;
+      color: #fff;
+      background-image: url('th (2).jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-image: url(th\ \(7\).jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: fixed;
+      text-shadow: #d8d0d0;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: #b9bec2;
+      transition: all 0.3s ease;
+      background-color: rgb(68, 61, 61);
+    }
+
+    nav span {
+      font-size: 3rem;
+      color:rgb(227, 32, 7);
+      font-weight: 900;
+    }
+
+    nav .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+    }
+
+    nav .logo-container img {
+      height: 100px;
+      transition: transform 0.3s ease;
+      width:100pxl;
+    }
+
+    nav .logo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #fff;
+    }
+
+    
+    .main-layout {
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px; 
+    }
+
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); 
+      backdrop-filter: blur(10px);
+      border-right: 2px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      height: 100vh; 
+    }
+
+    .sidebar h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      flex: 1;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px;
+      color: white;
+      backdrop-filter: blur(10px); 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      font-size: 1.5rem; 
+    }
+
+    input, button {
+      margin-top: 10px;
+      font-size: 1.2rem; 
+    }
+
+    table {
+      margin: 0 auto;
+      font-size: 2rem; 
+    }
+
+    table th, table td {
+      padding: 20px; 
+    }
+
+    table td {
+      font-size: 2rem; 
+    }
+
+    #contact {
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    #contact a {
+      color: #17aeae;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: #6ec7d6;
+    }
+
+    footer {
+      background-color: #271d1d;
+      color: #f5eeee;
+      text-align: center;
+      padding: 20px 0;
+      background-image: url(th\ \(2\).jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    footer .social-icons {
+      margin-top: 10px;
+    }
+
+    footer .social-icons a {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .social-icons a:hover {
+      color: #17aeae;
+    }
+
+    .sidebar h1 {
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo-container">
+        <img src="th4.jpg" alt="Logo" class="logo-container">
+        <span>CV</span>
+    </div>
+    <ul>
+        <li><a href="new 2.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="NUMBER SYSTEM CONVERSIO..html">NUMBER SYSTEM CONVERTER</a></li>
+        <li><a href="inches converter.html">INCH CONVERTER</a></li>
+        
+    </ul>
+  </nav>
+  <div class="main-layout">
+    
+    <div class="sidebar">
+      <h1>WELCOME TO THE NUMBER SYSTEM CONVERTER!</h1>
+      <ul>
+        <li>This calculator converts decimal numbers into 3 common number systems:</li>
+        <li><strong>Binary</strong>: The base-2 number system.</li>
+        <li><strong>Octal</strong>: The base-8 number system.</li>
+        <li><strong>Hexadecimal</strong>: The base-16 number system.</li>
+        <li>For example, if you enter the decimal number <strong>45</strong>, the conversions will be:</li>
+        <li><strong>Binary:</strong> 101101</li>
+        <li><strong>Octal:</strong> 55</li>
+        <li><strong>Hexadecimal:</strong> 2D</li>
+        <li>If you enter an invalid number (like a string), you'll be prompted to enter a valid number.</li>
+      </ul>
+    </div>
+
+    
+    <div class="container">
+      <h2 id="converter">Number System Converter</h2>
+      <label for="inputValue">Enter a Number:</label>
+      <input type="text" id="inputValue" placeholder="Enter a decimal value">
+      <button onclick="convert()">Convert</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Number System</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody id="results">
+          <tr><td>Binary</td><td id="binary">-</td></tr>
+          <tr><td>Octal</td><td id="octal">-</td></tr>
+          <tr><td>Hexadecimal</td><td id="hexadecimal">-</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function convert() {
+      const inputValue = document.getElementById("inputValue").value;
+
+      if (isNaN(inputValue) || inputValue === "") {
+        alert("Please enter a valid number");
+        return;
+      }
+
+      const decimal = parseInt(inputValue, 10);
+      const binary = decimal.toString(2);
+      const octal = decimal.toString(8);
+      const hexadecimal = decimal.toString(16).toUpperCase();
+
+      document.getElementById("binary").textContent = binary;
+      document.getElementById("octal").textContent = octal;
+      document.getElementById("hexadecimal").textContent = hexadecimal;
+    }
+  </script>
+  
+  <footer>
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>For more information, email us at <a id="mail" href="mailto:hamjaydcantones@gmail.com">hamjaydcantones@gmail.com</a>.</p>
+    </div>
+    
+    
+     <h1>
+      FOLLOW US ON
+     </h1>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://www.facebook.com/jaydham.cantones.52?mibextid=ZbWKwL
+      " target="_blank" class="fab fa-facebook-f"></a>
+      <a href="https://www.youtube.com" target="_blank" class="fab fa-youtube"></a>
+      <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+    </div>
+
+    <p>&copy; 2024 CONVERSION. All rights</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INCH CONVERTER</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      
+    <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #040101;
+      color: #fff;
+      background-image: url('th (2).jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-position: center center; 
+      height: 100vh; 
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-image: url('th (7).jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: fixed;
+      text-shadow: #d8d0d0;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: #b9bec2;
+      transition: all 0.3s ease;
+      background-color: rgb(68, 61, 61);
+    }
+
+    nav span {
+      font-size: 3rem;
+      color:rgb(227, 32, 7);
+      font-weight: 900;
+    }
+
+    nav .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+    }
+
+    nav .logo-container img {
+      height: 100px;
+      transition: transform 0.3s ease;
+      width: 100px;
+    }
+
+    nav .logo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      color: #fff;
+    }
+
+    
+    .main-layout {
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px; 
+    }
+
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px); 
+      border-right: 2px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      height: 100vh; 
+    }
+
+    .sidebar h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      flex: 1;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px;
+      color: rgb(196, 159, 159);
+      backdrop-filter: blur(10px); 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      font-size: 1.5rem; 
+    }
+
+    input, button {
+      margin-top: 10px;
+      font-size: 1.2rem; 
+    }
+
+    table {
+      margin: 0 auto;
+      font-size: 2rem; 
+    }
+
+    table th, table td {
+      padding: 20px; 
+    }
+
+    table td {
+      font-size: 2rem; 
+    }
+
+    #contact {
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    #contact a {
+      color: #17aeae;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: #6ec7d6;
+    }
+
+    footer {
+      background-color: #271d1d;
+      color: #f5eeee;
+      text-align: center;
+      padding: 20px 0;
+      background-image: url('th (2).jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    footer .social-icons {
+      margin-top: 10px;
+    }
+
+    footer .social-icons a {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .social-icons a:hover {
+      color: #17aeae;
+    }
+
+    .sidebar h1 {
+      font-size: 2rem;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 10px;
+      font-weight: bold;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #f00e38;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #2a0e8f;
+    }
+
+    .output {
+      margin-top: 20px;
+    }
+
+    .output p {
+      background-color: #f0d9d9;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #600808;
+    }
+    footer {
+      background-color: #271d1d;
+      color: #f5eeee;
+      text-align: center;
+      padding: 20px 0;
+      background-image: url(th\ \(2\).jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    footer .social-icons {
+      margin-top: 10px;
+    }
+
+    footer .social-icons a {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .social-icons a:hover {
+      color: #e4eded;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="th4.jpg" alt="Logo">
+            <span>CV</span>
+        </div>
+        <ul>
+            <li><a href="new 2.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="NUMBER SYSTEM CONVERSIO..html">NUMBER SYSTEM CONVETER</a></li>
+            <li><a href="inches converter.html">INCH CONVERTER</a></li>
+            
+        </ul>
+    </nav>
+    <div class="main-layout">
+            <div class="sidebar">
+                <h1>WELCOME TO THE INCH CONVERTER!</h1>
+                <p>This calculator is designed to <strong>convert inches</strong> into three other units of length: <strong>centimeters</strong>, <strong>meters</strong>, and <strong>feet</strong>.</p>
+                <h2>How It Works:</h2>
+                <ul>
+                    <li><strong>Enter Inches:</strong> Enter the length in inches that you want to convert.</li>
+                    <li><strong>Conversion Process:</strong> When you click the "CONVERT" button, the calculator will automatically convert the input inches into:</li>
+                    <ul>
+                        <li><strong>Centimeters:</strong> 1 inch = 2.54 centimeters.</li>
+                        <li><strong>Meters:</strong> 1 inch = 0.0254 meters.</li>
+                        <li><strong>Feet:</strong> 1 inch = 0.0833333 feet.</li>
+                    </ul>
+                    <li><strong>Results:</strong> The results will be displayed instantly in the output section, showing the corresponding values in centimeters, meters, and feet.</li>
+                </ul>
+                <h2>Example:</h2>
+                <p>If you enter <strong>12 inches</strong>:</p>
+                <ul>
+                    <li>12 inches = 30.48 cm</li>
+                    <li>12 inches = 0.3048 m</li>
+                    <li>12 inches = 1 ft</li>
+                </ul>
+                <p>Try it out by entering a value and see the conversions!</p>
+            </div>
+            
+    <div class="container">
+        <h2>Convert Inches</h2>
+
+        <label for="inches">Enter Inches:</label>
+        <input type="number" id="inches" placeholder="Enter value in inches" />
+
+        <button onclick="convert()">CONVERT</button>
+
+        <div class="output">
+            <p id="centimeter"></p>
+            <p id="meter"></p>
+            <p id="foot"></p>
+        </div>
+    </div>
+
+    <script>
+        function convert() {
+            var inches = document.getElementById("inches").value;
+
+            var centimeter = inches * 2.54;
+            var meter = inches * 0.0254;
+            var foot = inches * 0.0833333;
+
+            document.getElementById("centimeter").innerText = inches + " inches = " + centimeter.toFixed(2) + " cm";
+            document.getElementById("meter").innerText = inches + " inches = " + meter.toFixed(2) + " m";
+            document.getElementById("foot").innerText = inches + " inches = " + foot.toFixed(2) + " ft";
+        }
+    </script>
+    <footer>
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>For more information, email us at <a id="mail" href="mailto:hamjaydcantones@gmail.com">hamjaydcantones@gmail.com</a>.</p>
+        </div>
+        
+        
+         <h1>
+          FOLLOW US ON
+         </h1>
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+          <a href="https://www.facebook.com/jaydham.cantones.52?mibextid=ZbWKwL
+          " target="_blank" class="fab fa-facebook-f"></a>
+          <a href="https://www.youtube.com" target="_blank" class="fab fa-youtube"></a>
+          <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+        </div>
+    
+        <p>&copy; 2024 CONVERSION. All rights</p>
+      </footer>
+</body>
+</html>

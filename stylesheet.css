@@ -1,0 +1,341 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040101;
+    line-height: 1.6;
+    
+    color: #07090b;
+}
+html {
+    scroll-behavior: smooth;
+}
+ nav {
+    background-image: url(th\ \(7\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:fixed;
+    text-shadow: #d8d0d0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: #b9bec2;
+    transition: all 0.3s ease;
+    background-color:rgb(68, 61, 61);
+}
+nav span {
+    font-size:3rem;
+    color:rgb(227, 32, 7);
+    font-weight: 900;
+}
+
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+nav .logo-container img {
+    height: 100px;
+    transition: transform 0.3s ease;
+    width:100px;
+}
+
+nav .logo-container img:hover {
+    transform: scale(1.1);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin:10px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+header {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px; 
+    
+    color: #fff; 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 15px;
+    margin: 20px 0; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 3.5rem; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+header .image-container img {
+    max-width: 80%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.small-box {
+    position: absolute;
+    top: 60%; 
+    transform: translateY(-50%);
+    width: 180px;
+    background-color: rgba(239, 230, 230, 0.7); 
+    border: 2px solid rgb(236, 236, 230);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(68, 2, 2, 0.3);
+}
+
+.small-box p {
+    color: #fff; 
+}
+
+.small-box button {
+    padding: 5px 15px;
+    background-color: rgb(86, 86, 80);
+    color: rgb(201, 189, 189);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.small-box button:hover {
+    background-color: rgb(230, 220, 220);
+    color: rgb(255, 255, 253);
+    border: 1px solid white;
+}
+.small-box.left {
+    left: -20px;
+}
+
+.small-box.right {
+    right: -20px;
+}
+.about-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+    height: 80%;
+    background-image: url(th\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.about-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.about-card h1{
+    color: azure;
+    font-size: 7rem; 
+    margin-bottom:0px;
+}
+.about-card p{
+    color: beige;
+    font-size: 1rem; 
+    margin-bottom:0px;
+  }
+.example-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+    background-image: url(th\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgb(89, 72, 72);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(246, 245, 245);
+    overflow: hidden;
+    background-image: url(th\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+section ul li{
+    color: #d8d0d0;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #bccbd8;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section h3 {
+    font-size: 24px;
+    color: #f0f4f8;
+    margin-top: 20px;
+    border-bottom: 2px solid #b9bec2;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+section li:hover{
+    color: #17aeae;
+}
+
+
+.example-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+#contact {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+}
+
+#contact a {
+    color: #17aeae;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#contact a:hover {
+    color: #6ec7d6;
+}
+
+
+footer {
+      background-color: #271d1d;
+      color: #f5eeee;
+      text-align: center;
+      padding: 20px 0;
+      background-image: url(th\ \(2\).jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    footer .social-icons {
+      margin-top: 10px;
+    }
+
+    footer .social-icons a {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer .social-icons a:hover {
+      color: #17aeae;
+    }
+
+header {
+    margin: 20px;
+}
+.about-card {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.about-card h1{
+    font-size: 2rem;
+}
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.about-card h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section h2 {
+    color: #2980b9;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.section p, .section ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+.section ul {
+    margin-top: 10px;
+}
+.section li {
+    margin-bottom: 10px;
+}
+.example {
+    font-family: 'Courier New', Courier, monospace;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.summary {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+}
